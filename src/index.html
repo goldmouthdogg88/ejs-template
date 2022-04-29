@@ -1,94 +1,106 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="nav-bar">
-        <div class="logo"></div>
-        <h3 class="user-container">
-          Welcome, Desmond
-          <span id="returning-user"></span>
-          <span id="user"></span>
-        </h3>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="logo"></div>
+      <h3 class="user-container">
+        Welcome, Desmond
+        <span id="returning-user"></span>
+        <span id="user"></span>
+      </h3>
+    </div>
+  </header>
+
+  <h2 style="visibility: hidden;">ipsum lorem</h2>
+
+  <div class="row">
+    <div class="column left" style="background-color: #aaa">
+      <h2 style="text-align: center;">Posts</h2>
+
+      <ul class="posts-container">
+        <li><a href="blog-post">blog post</a></li>
+      </ul>
+
+
+    </div>
+    <div class="column right" style="background-color: #bbb">
+      <div class='paragraph-container'>
+        <h3 class='paragraph-banner'>Getting Started</h3>
+        <p>My website is so <strike>ugly</strike> awesome!, but you've got to start somewhere. So I wanted to create I
+          guesse like a blog, about all the different tools avaialble with timelines with prices.</p>
+
+        <p>If you want to be a developer, you'll want to learn HTML, CSS, and JavaScript. Which are really the very
+          basics,
+          how much of each should you learn? It doesn't take much to put together a basic static website.</p>
       </div>
-    </header>
 
-    <h2>Two Unequal Columns</h2>
 
-    <div class="row">
-      <div class="column left" style="background-color: #aaa">
-        <h2>Column 1</h2>
-        <p>Some text..</p>
+      <div class='paragraph-container'>
+        <h3 class='paragraph-banner'>Leveling Up</h3>
+
+        <p>Once you have a grasp of the basics you can move onto frameworks and libraries. Just like with game consoles
+          there's a big three to pick from. However you are far from limited to just these.</p>
+
+        <ul class="library-display">
+          <li class="library-items">React</li>
+          <li class="library-items">Angular</li>
+          <li class="library-items">Vue</li>
+
+
+
+          <p>You can work with a framework or view library, but you'll want to get an understanding of ECMAScript2015
+            and
+            beyond. There are many place you can learn about es6 which will be helpful when reading modern documentation
+            and
+            tutorials on JavaScript.</p>
       </div>
-      <div class="column right" style="background-color: #bbb">
-        <div class='paragraph-container'>
-          <h3 class='paragraph-banner'>Getting Started</h3>
-          <p>My website is so <strike>ugly</strike> awesome!, but you've got to start somewhere. So I wanted to create I
-            guesse like a blog, about all the different tools avaialble with timelines with prices.</p>
-      
-          <p>If you want to be a developer, you'll want to learn HTML, CSS, and JavaScript. Which are really the very basics,
-            how much of each should you learn? It doesn't take much to put together a basic static website.</p>
-        </div>
-      
-      
-        <div class='paragraph-container'>
-          <h3 class='paragraph-banner'>Leveling Up</h3>
-      
-          <p>Once you have a grasp of the basics you can move onto frameworks and libraries. Just like with game consoles
-            there's a big three to pick from. However you are far from limited to just these.</p>
-      
-          <ul class="library-display">
-            <li class="library-items">React</li>
-            <li class="library-items">Angular</li>
-            <li class="library-items">Vue</li>
-      
-      
-      
-            <p>You can work with a framework or view library, but you'll want to get an understanding of ECMAScript2015 and
-              beyond. There are many place you can learn about es6 which will be helpful when reading modern documentation and
-              tutorials on JavaScript.</p>
-        </div>
-      
-        <div class='paragraph-container'>
-          <h3 class='paragraph-banner'>Web Design</h3>
-      
-          <p>Is hailed as one of the most difficult skills to learn, especially for the more terminal oriented community.
-            Anyway I'm telling you its posible not that I can do it. I'm still learning like most.</p>
-          <p>Once you get a nice web deisgn down there's the interactions, responding to user input. When a website or piece
-            of software is designed well its almost unoticable, because it meets your expectations.</p>
-        </div>
-      
-        <div class='paragraph-container'>
-          <h3 class='paragraph-banner'>Getting Technical</h3>
-      
-          <p>There's so much that goes into programming. Building modern websites, luckily there have been major inovation in online learning. There are many options to learn how to code.</p>
-        </div>
-      
-        <div class='paragraph-container'>
-          <h3 class='paragraph-banner'>Template Element</h3>
-      
-          <p>lorem ipsum dolor sit amet</p>
-        </div>
-      
-      
-      
-      
-        <div class="container">
-          <h5 id="reviews"></h5>
-        </div>
-        <script src="index.pack.js"></script>
+
+      <div class='paragraph-container'>
+        <h3 class='paragraph-banner'>Web Design</h3>
+
+        <p>Is hailed as one of the most difficult skills to learn, especially for the more terminal oriented community.
+          Anyway I'm telling you its posible not that I can do it. I'm still learning like most.</p>
+        <p>Once you get a nice web deisgn down there's the interactions, responding to user input. When a website or
+          piece
+          of software is designed well its almost unoticable, because it meets your expectations.</p>
+      </div>
+
+      <div class='paragraph-container'>
+        <h3 class='paragraph-banner'>Getting Technical</h3>
+
+        <p>There's so much that goes into programming. Building modern websites, luckily there have been major inovation
+          in online learning. There are many options to learn how to code.</p>
+      </div>
+
+      <div class='paragraph-container'>
+        <h3 class='paragraph-banner'>Template Element</h3>
+
+        <p>lorem ipsum dolor sit amet</p>
+      </div>
+
+
+
+
+      <div class="container">
+        <h5 id="reviews"></h5>
       </div>
     </div>
-    <script>
-      // compute column-widths
-      function computeColumns(left = 25) {
-        let total, right;
-        total = 100;
-        right = 100 - left;
-        console.log(`left: ${left}, right: ${right}`);
-      }
-    </script>
-  </body>
+  </div>
+  <script>
+    // compute column-widths
+    function computeColumns(left = 25) {
+      let total, right;
+      total = 100;
+      right = 100 - left;
+      console.log(`left: ${left}, right: ${right}`);
+    }
+  </script>
+  <script src="./script.js"></script>
+</body>
+
 </html>

@@ -60,7 +60,7 @@ nav {
 }
 
 nav li {
-  postion: relative;
+  position: relative;
   float: right;
   padding: 0px 30px 0px 30px;
   text-transform: capitalize;
